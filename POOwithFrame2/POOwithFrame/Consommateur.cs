@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ProjetPOO
+namespace POOwithFrame
 {
-    class Consommateur
+    public class Consommateur
     {
         protected string nom;
         protected double consomEnergie;
@@ -46,13 +46,21 @@ namespace ProjetPOO
             }
             else
             {
-                string alerte = "";
-                alerte += string.Format("Alerte, les lignes du consommateur {0} ne peuvent pas supporter encore {1} Watts", this.nom, Math.Abs(sommediff));
-                Console.WriteLine(alerte);
                 double someneg = this.consomEnergie - Math.Abs(sommediff);
                 return sommeEnergieLignnes;
-                
             }
+        }
+        public string Alert()
+        {
+            //double sommeEnergieLignnes = SommeEnergieLignnes();
+            sommediff = SommeEnergieLignnes() - this.consomEnergie;
+            if (sommediff < 0)
+            {
+                string alerte = string.Format("Alerte, les lignes du consommateur {0} ne peuvent pas supporter encore {1} Watts", this.nom, Math.Abs(sommediff));
+                return alerte;
+            }
+            else { return ""; }
+                 
         }
     }
 }

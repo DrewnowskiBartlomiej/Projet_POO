@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ProjetPOO
+namespace POOwithFrame
 {
-    class LigneReseaux
+    public class LigneReseaux
     {
         private double resistanceLigne;
         public LigneReseaux(double resistanceLigne)
