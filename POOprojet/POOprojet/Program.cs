@@ -4,11 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace POOwithFrame
+namespace POOprojet
 {
-    public class Program
+    static class Program
     {
-        
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
@@ -23,13 +22,15 @@ namespace POOwithFrame
             ProducteurEnergie P2 = new CentralGaz(33000, "CentralGaz1");
             ProducteurEnergie P3 = new CentralNucleaire(50000, "CentralNucleaire1");
             ProducteurEnergie P4 = new CentralSolaire(10000, "CentralSolaire");
+            //ProducteurEnergie P5 = new CentralNucleaire(10000, "CentralNucleaire2");
 
             node1.AddProducteurEnergie(P1);
             node1.AddProducteurEnergie(P2);
             node1.AddProducteurEnergie(P3);
             node1.AddProducteurEnergie(P4);
+            //node1.AddProducteurEnergie(P5);
 
-            
+
             LigneReseaux l1 = new LigneReseaux(10000);
             LigneReseaux l2 = new LigneReseaux(20000);
             LigneReseaux l3 = new LigneReseaux(30000);
@@ -58,10 +59,10 @@ namespace POOwithFrame
             node1.AddConsommateur(C4);
             node1.AddConsommateur(C5);
 
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1(node1));
-
         }
     }
 }

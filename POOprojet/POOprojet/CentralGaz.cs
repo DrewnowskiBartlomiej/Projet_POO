@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace POOwithFrame
+namespace POOprojet
 {
     class CentralGaz : ProducteurEnergie
     {
@@ -15,7 +15,7 @@ namespace POOwithFrame
         {
             if (starter)
             {
-                if (Meteo.GetEnsoleillement() > 40 & Meteo.GetEnsoleillement() > 60)
+                if (Meteo.GetEnsoleillement() > 40 && Meteo.GetEnsoleillement() > 60)
                 {
                     return maxProduction / 2;
                 }

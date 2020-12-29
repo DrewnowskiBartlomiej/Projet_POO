@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("POOwithFrame")]
+[assembly: AssemblyTitle("POOprojet")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("POOwithFrame")]
+[assembly: AssemblyProduct("POOprojet")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Le GUID suivant est pour l'ID de la typelib si ce projet est exposé à COM
-[assembly: Guid("70c78d0d-cc73-4b44-99be-f541210d0a5b")]
+[assembly: Guid("875fb949-8bd5-4b97-8d5a-11eafa522db7")]
 
 // Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 //

@@ -1,4 +1,4 @@
-﻿namespace POOwithFrame
+﻿namespace POOprojet
 {
     partial class Form3
     {
@@ -35,28 +35,28 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(13, 13);
+            this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 90);
+            this.button1.Size = new System.Drawing.Size(132, 88);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Revenir aux graphes";
+            this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(159, 13);
+            this.textBox1.Location = new System.Drawing.Point(150, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(629, 217);
+            this.textBox1.Size = new System.Drawing.Size(638, 212);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(159, 236);
+            this.textBox2.Location = new System.Drawing.Point(150, 230);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(629, 202);
+            this.textBox2.Size = new System.Drawing.Size(638, 208);
             this.textBox2.TabIndex = 2;
             // 
             // Form3

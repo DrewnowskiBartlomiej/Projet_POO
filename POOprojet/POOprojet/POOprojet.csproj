@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70C78D0D-CC73-4B44-99BE-F541210D0A5B}</ProjectGuid>
+    <ProjectGuid>{875FB949-8BD5-4B97-8D5A-11EAFA522DB7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>POOwithFrame</RootNamespace>
-    <AssemblyName>POOwithFrame</AssemblyName>
+    <RootNamespace>POOprojet</RootNamespace>
+    <AssemblyName>POOprojet</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,9 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Poducteur\CentralGaz.cs" />
-    <Compile Include="Poducteur\CentralNucleaire.cs" />
-    <Compile Include="Poducteur\CentralSolaire.cs" />
+    <Compile Include="CentralGaz.cs" />
+    <Compile Include="CentralNucleaire.cs" />
+    <Compile Include="CentralSolaire.cs" />
     <Compile Include="Consommateur.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -74,8 +74,8 @@
     <Compile Include="Meteo.cs" />
     <Compile Include="Network.cs" />
     <Compile Include="Node.cs" />
-    <Compile Include="Poducteur\ParcEolien.cs" />
-    <Compile Include="Poducteur\ProducteurEnergie.cs" />
+    <Compile Include="ParcEolien.cs" />
+    <Compile Include="ProducteurEnergie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

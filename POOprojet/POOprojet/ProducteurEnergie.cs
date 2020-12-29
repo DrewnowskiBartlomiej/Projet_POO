@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace POOwithFrame
+namespace POOprojet
 {
     public class ProducteurEnergie
     {
@@ -34,8 +34,8 @@ namespace POOwithFrame
         {
             return 0;
         }
-        public void SetOFF() { starter = false; }
-        public void SetON() { starter = true; }
+        public virtual void SetOFF() { starter = false; }
+        public virtual void SetON() { starter = true; }
 
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace POOwithFrame
+namespace POOprojet
 {
     public partial class Form2 : Form
     {
@@ -16,14 +16,13 @@ namespace POOwithFrame
         {
             InitializeComponent();
             foreach (string data in productorData)
-            { 
+            {
                 textBox1.AppendText(data);
                 textBox1.AppendText(Environment.NewLine);
             }
         }
-        
 
-        private void Retour_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Owner.Show();
             this.Close();

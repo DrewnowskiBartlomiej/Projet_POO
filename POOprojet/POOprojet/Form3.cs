@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace POOwithFrame
+namespace POOprojet
 {
     public partial class Form3 : Form
     {

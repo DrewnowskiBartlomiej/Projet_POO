@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace POOwithFrame
+namespace POOprojet
 {
     public class Consommateur
     {

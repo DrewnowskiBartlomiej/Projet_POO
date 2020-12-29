@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace POOwithFrame.Properties
+namespace POOprojet.Properties
 {
 
 
