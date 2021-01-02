@@ -15,7 +15,7 @@ namespace POOprojet
         {
             if (starter)
             {
-                if (Meteo.GetEnsoleillement() > 40 && Meteo.GetEnsoleillement() > 60)
+                if (Meteo.GetTemperature() > 40 && Meteo.GetEnsoleillement() > 60)
                 {
                     return maxProduction / 2;
                 }
