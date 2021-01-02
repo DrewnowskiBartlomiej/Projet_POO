@@ -10,7 +10,7 @@
   <Class Name="POOprojet.CentralNucleaire">
     <Position X="2.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <HashCode>ggAAAAAAAAAAAABAAAQAAAAAAAAAAAAAIACAAAAAAAA=</HashCode>
       <FileName>CentralNucleaire.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -71,13 +71,6 @@
     <TypeIdentifier>
       <HashCode>AAQAEAAAAAIAAAAAAAAAAAgAAAABAAAAAAQAAAAAAAA=</HashCode>
       <FileName>Meteo.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="POOprojet.Network" Collapsed="true">
-    <Position X="17.5" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
-      <FileName>Network.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="POOprojet.Node">

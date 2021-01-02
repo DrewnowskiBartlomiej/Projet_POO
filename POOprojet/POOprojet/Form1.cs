@@ -34,7 +34,7 @@ namespace POOprojet
             List<string> producteurData = new List<string>();
             foreach (ProducteurEnergie producteur in node2.listProducteur)
             {
-                producteurData.Add(producteur.GetName() + " peut poduie jusqu'à " + producteur.GetMaxProduction() + " Watt et sa emission est de " + producteur.Emission());
+                producteurData.Add(producteur.GetName() + " peut produire jusqu'à " + producteur.GetMaxProduction() + " Watt avec une emission de " + producteur.Emission() + " et un cout de " + producteur.CoutProduction() + " /MWatt");
             }
 
             Form2 form2 = new Form2(producteurData);
@@ -67,13 +67,14 @@ namespace POOprojet
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Show producers in comboBox 
             foreach (ProducteurEnergie producteurEnergie in node2.listProducteur)
             {
                 comboBox1.Items.Add(producteurEnergie.GetName());
             }
             comboBox1.SelectedIndex = 0;
             
-            //Show the graph of the production cost 
+            //Show the graph of the production
             foreach (ProducteurEnergie producteurEnergie in node2.listProducteur)
             {
                 chart2.Series["Production"].Points.AddXY(producteurEnergie.GetName(), producteurEnergie.CoutProduction());
@@ -88,7 +89,7 @@ namespace POOprojet
             chart3.Series["Energy"].Points.AddXY("Production", node2.SommeEnergiePrduite());
             chart3.Series["Energy"].Points.AddXY("Purchased energy", node2.GetEnergyMissing());
             chart3.Series["Energy"].Points.AddXY("Energy sold", node2.GetEnergyOverproduced());
-            //Refresh of weather
+            //Show the weather
             labelEnsoleillement.Text = string.Format("Ensoleillement : {0} %", Meteo.GetEnsoleillement());
             labelVent.Text = string.Format("Force du vent : {0} km/h", Meteo.GetForceDuVent());
             labelTemperature.Text = string.Format("Température : {0} °C", Meteo.GetTemperature());
@@ -103,7 +104,7 @@ namespace POOprojet
                 Meteo.RandomMeteo();
                 FuelMarket.RandomPriceOfFuel();
 
-                //Show the graph of the production cost 
+                //Show the graph of the production 
                 foreach (ProducteurEnergie producteurEnergie in node2.listProducteur)
                 {
                     chart2.Series["Production"].Points.AddXY(producteurEnergie.GetName(), producteurEnergie.Production());

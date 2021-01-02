@@ -30,7 +30,7 @@ namespace POOprojet
             await OpeningAsync();
             starter = true;
         }
-        public async Task OpeningAsync()
+        private async Task OpeningAsync()
         {
             while(i <= 0.8)
             {
@@ -38,7 +38,7 @@ namespace POOprojet
                 await Task.Delay(1000);
             } 
         }
-        public async Task ClosingAsync()
+        private async Task ClosingAsync()
         {
             while (i >= 0.2)
             {

@@ -13,10 +13,8 @@ namespace POOprojet
         /// </summary>
         [STAThread]
         static void Main()
-        {
-            Network network = new Network();
+        {         
             Node node1 = new Node();
-            network.AddListNodes(node1);
 
             ProducteurEnergie P1 = new ParcEolien(15000, "ParcEolien1");
             ProducteurEnergie P2 = new CentralGaz(33000, "CentralGaz1");

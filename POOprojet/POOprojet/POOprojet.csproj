@@ -72,7 +72,6 @@
     <Compile Include="FuelMarket.cs" />
     <Compile Include="LigneReseaux.cs" />
     <Compile Include="Meteo.cs" />
-    <Compile Include="Network.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="ParcEolien.cs" />
     <Compile Include="ProducteurEnergie.cs" />
